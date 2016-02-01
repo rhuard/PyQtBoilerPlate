@@ -3,6 +3,11 @@ testing out PyQT trying to figure it out
 
 
 Tyring to get a feel for how to use PyQt 5
+
+As a heads up, especally with the naming of menu items in the menu bar, I did not use good naming conventions. One day I will probably change that.
+For now it may be a little confusing and for that I applogize, but this was a really hacked together project to get some boiler plate running. The boiler
+plate being the code in the Run.py. the UI.py was just something to test on.
+
 in order to do this you need the pyuic5 tool installed:
     ```
     sudo apt-get install pyqt5-dev-tools
