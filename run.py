@@ -22,18 +22,22 @@ This can be thought of an adaptor to the other pieces of the logic engine. You c
 to methods in this class which just delegate calls to the other logic engines.
 """
 class logic(object):
-    ex = None
+    window = None
     def __init__(self):
-        self.ex = UiWrapper()
+        self.window = UiWrapper()
         #connect all the buttons and other things here
-        self.ex.ui.pushButton.clicked.connect(self.stuff)
+        self.window.ui.pushButton.clicked.connect(self.stuff)
+        self.window.ui.actionThings.triggered.connect(self.moreStuff)
         
         #show the form
-        self.ex.show()
+        self.window.show()
 
     #methods for button connections
     def stuff(self):
         print("stuff")
+
+    def moreStuff(self):
+        print("I am doing more stuff")
 
 
 #run if main
