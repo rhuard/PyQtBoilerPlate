@@ -18,3 +18,10 @@ next run pyuic5 tool:
     
 Then you can mess with your logic file after inporting the ui .py file. See code for example
 
+
+
+
+This is for Qt 5 using Qt 5 designer and Python 3
+
+
+In the future there will be one python 2 and Qt 4
