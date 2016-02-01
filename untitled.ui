@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>791</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QComboBox" name="comboBoxTEST">
+       <item>
+        <property name="text">
+         <string>This</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>is</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>a</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>test</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>320</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ClickMe</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTest">
+    <property name="title">
+     <string>Test</string>
+    </property>
+    <addaction name="actionThings"/>
+    <addaction name="actionMore_things"/>
+   </widget>
+   <widget class="QMenu" name="menuHerewe_are">
+    <property name="title">
+     <string>Herewe are</string>
+    </property>
+    <addaction name="actionI_am_a_button"/>
+   </widget>
+   <addaction name="menuTest"/>
+   <addaction name="menuHerewe_are"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionThings">
+   <property name="text">
+    <string>things</string>
+   </property>
+  </action>
+  <action name="actionMore_things">
+   <property name="text">
+    <string>more things</string>
+   </property>
+  </action>
+  <action name="actionI_am_a_button">
+   <property name="text">
+    <string>i am a button</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
