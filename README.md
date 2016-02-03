@@ -22,6 +22,11 @@ You can run the designer by:
     ```
     /usr/lib/x86_64-linux-gnu/qt5/bin/designer
     ```
+If you are on a 32 bit system it should be:
+    ```
+    /usr/lib/i386-linux-gnu/qt5/bin/designer
+    ```
+    
     
 You can design the UI anyway you want in the designer, then you will have the <name>.ui file
 next run pyuic5 tool:
