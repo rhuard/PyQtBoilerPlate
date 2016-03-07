@@ -21,7 +21,7 @@ This is a wrapper class so that we can make a logic engine, this wraps the UI so
 This can be thought of an adaptor to the other pieces of the logic engine. You can include them and then connect buttons from the UI
 to methods in this class which just delegate calls to the other logic engines.
 """
-class logic(object):
+class Program(object):
     window = None
     def __init__(self):
         self.window = UiWrapper()
@@ -44,7 +44,7 @@ class logic(object):
 if __name__ == "__main__":
         #boiler plate for QT
         app = QtWidgets.QApplication(sys.argv)
-        #declare the logic engine and let that handle the rest
-        l = logic()
+        #declare the program and let that handle the rest
+        P = Program()
         #more boiler plate
         sys.exit(app.exec_())
