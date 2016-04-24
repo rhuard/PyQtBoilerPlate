@@ -28,13 +28,22 @@ class Program(object):
         #connect all the buttons and other things here
         self.window.ui.pushButton.clicked.connect(self.stuff)
         self.window.ui.actionThings.triggered.connect(self.moreStuff)
-        
+
         #show the form
         self.window.show()
 
     #methods for button connections
     def stuff(self):
         print("stuff")
+
+        """
+        spawinging new windows
+        """
+        self.newwindow = UiWrapper()
+        self.newwindow.ui.pushButton.clicked.connect(self.stuff)
+        self.newwindow.ui.actionThings.triggered.connect(self.moreStuff)
+        self.newwindow.show()
+
 
     def moreStuff(self):
         print("I am doing more stuff")
